@@ -1,24 +1,22 @@
-# README
+# 💼 Incubyte Salary Management Kata
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails API-only application built as part of the Incubyte Engineering Hiring Exercise.
 
-Things you may want to cover:
+This project manages employees, calculates salaries after deductions, and provides salary metrics by country and job title — following strict **TDD (Test Driven Development)** practices.
 
-* Ruby version
+---
 
-* System dependencies
+## 🚀 Tech Stack
 
-* Configuration
+- **Ruby 3.4.7**  
+- **rails 8.1.1** (API mode)  
+- **SQLite3** (for simplicity)  
+- **RSpec + FactoryBot + Faker** for testing  
 
-* Database creation
+---
 
-* Database initialization
+## 📦 Setup Instructions
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 1️⃣ Clone the Repository
+git clone git@github.com:yourusername/salary_kata.git
+cd salary_kata
