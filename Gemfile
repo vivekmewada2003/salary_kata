@@ -54,4 +54,5 @@ group :development, :test do
   # for generate fake data
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'shoulda-matchers'
 end
