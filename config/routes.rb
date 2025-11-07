@@ -11,6 +11,9 @@ Rails.application.routes.draw do
     end
   end
 
+  get '/metrics/country/:country', to: 'metrics#country'
+  get '/metrics/job_title/:job_title', to: 'metrics#job_title'
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
