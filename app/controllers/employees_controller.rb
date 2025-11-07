@@ -35,6 +35,19 @@ class EmployeesController < ApplicationController
     head :no_content
   end
 
+  def salary
+    employee = @employee
+    gross = employee.salary.to_f
+    tds = case employee.country.strip.downcase
+          when 'india', 'in', 'bharat' then gross * 0.10
+          when 'united states', 'us', 'usa' then gross * 0.12
+          else 0.0
+          end
+    net = gross - tds
+
+    render json: { gross: gross.to_s, tds: tds.to_s, net: net.to_s }, status: :ok
+  end
+
   private
 
   def set_employee
