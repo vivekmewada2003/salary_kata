@@ -49,7 +49,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # For test rails application and code
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 8.0'
 
   # for generate fake data
   gem 'factory_bot_rails'
